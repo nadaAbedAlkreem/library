@@ -18,7 +18,7 @@ class Categories extends Model
 ];
 public function books()
 {
- return $this->hasMany( 'App\Models\books', 'category_id' , 'id');
+ return $this->hasMany( 'App\Models\Books', 'id' , 'category_id');
 }
 
 

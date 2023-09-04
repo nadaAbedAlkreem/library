@@ -80,12 +80,13 @@ License: For each use you must have a valid license purchased only from above li
              
 
             </div>
-			@include('compenents.footer')
-                @include('asset.js')
-
+		
        </div>
     </div>           
  
+	@include('compenents.footer')
+                @include('asset.js')
+
 
  
  

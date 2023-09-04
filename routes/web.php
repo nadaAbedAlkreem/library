@@ -36,6 +36,7 @@ Route::middleware(['auth:admin'])->group(function () {
     Route::delete('/books/delete/{id}', [App\Http\Controllers\BooksController::class, 'delete'])->name('book.delete');
     Route::get('/profile', [App\Http\Controllers\ProfileController::class, 'index'])->name('profile');
     Route::get('/select2-autocomplete-ajax-device',[App\Http\Controllers\BooksController::class,'dataAjaxDeviceDropdown'])->name('select2.device');
+    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 });
 
